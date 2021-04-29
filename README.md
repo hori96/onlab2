@@ -1,1 +1,2 @@
-# onlab2
+- Fixed error in LoopClosing.cc
+- Added new features to System.cc
