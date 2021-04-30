@@ -59,7 +59,6 @@ RUN git clone https://github.com/hori96/onlab2.git onlab2
 # download ORB-SLAM3
 RUN git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3 \
   && cd ORB_SLAM3 \
-  && . ~/.bashrc \
   && git checkout ef9784101fbd28506b52f233315541ef8ba7af57
   # && ./build.sh \
   # && build_ros.sh
@@ -86,14 +85,6 @@ RUN /bin/bash -c "source /opt/ros/melodic/setup.bash ;\
                   ./build_ros.sh || true; \
                   ./build_ros.sh || true; \
                   ./build_ros.sh || true"
-
-# SHELL ["/bin/bash", "-c"]
-# # RUN /bin/bash -c "cd ORB_SLAM3 && source ~/.bashrc && ./build_ros.sh || true && ./build_ros.sh || true && ./build_ros.sh || true"
-# RUN cd ORB_SLAM3 \
-  # && 
-  # && ./build_ros.sh || true \
-  # && ./build_ros.sh || true \
-  # && ./build_ros.sh || true
 
 # Download test dataset
 # optional
